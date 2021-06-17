@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"align="center">
+        <h3>Query Form</h3>
+        <form action="" method="POST">
+            {% csrf_token %}
+            contact_name:<input type="text"name="contact_name" id="" value="{{contact_name.query}}"><br><br>
+            contact_Number:<input type="text"name="contact_number" id="" value="{{contact_number.query}}"><br><br>
+    
+            Address:<input type="text"name="address" id="" value="{{address.query}}"><br><br>
+    
+            Requirement:<input type="text"name="requirement" id="" value="{{requirement.query}}"><br><br>
+    
+            City:<input type="text"name="city" id="" value="{{city.query}}"><br><br>
+            Pin_code:<input type="text"name="pin_code" id="" value="{{pin_code.query}}"><br><br>
+    
+            Applied:<input type="text"name="applied" id="" value="{{qapplied.query}}"><br><br>
+    
+    
+            <input type="submit"name="" id="value">
+        </form>
+    
+    </div>
+    
+</body>
+</html>
+
+   
+                      
+                    
+
+
+

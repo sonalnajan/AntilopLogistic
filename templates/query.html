@@ -1,0 +1,28 @@
+<section id="content">
+    <div class="content-wrap">
+
+        <div class="single-event">
+        <h3 style="color: #312783;font-family: times new roman;font-size: 40px;text-align: center;background-color: #e94e1b;">Query Form Data</h3>
+
+            <!--<div class="col_three_fourth">-->
+            <div class= "col-md-12" style="background-color:#cdcdcd;padding:10px;">
+                <div class="row">
+                <div class="col-sm-6">
+                    {% for i in query %}
+                    <h5>Contact Person :{{i.contact_name}}</h5>
+                    <h5>Cntact Number{{i.contact_number}}</h5>
+                    <h5>Address :{{i.address}}</h5>
+                    <h5>Your Requirement :{{i.requirement}}</h5>
+                    <h5>City:{{i.city}}</h5>
+                    <h5>pincode :{{i.pin_code}}</h5>
+                    <h5>Applied for :{{i.applied}}</h5>
+
+                    {% endfor %}
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
